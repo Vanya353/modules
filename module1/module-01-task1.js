@@ -7,5 +7,5 @@
 var name;
 var guest;
 name = 'Mango'
-guest = 'Mango'
+guest = name;
 document.write(guest)
