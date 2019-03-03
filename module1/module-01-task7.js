@@ -19,6 +19,3 @@ if (num==null){
 } else{
   alert('Необходимо ввести целое число');
 }
-	</script>
-</body>
-</html>
