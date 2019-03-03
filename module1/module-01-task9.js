@@ -17,9 +17,9 @@
 let hours = 7;
 let minutes = 3;
 let seconds = 42;
-let hours2 = (hours<10) ? "0" + hours : hours;
-let minutes2 = (minutes<10) ? "0" + minutes : minutes;
-let seconds2 = (seconds<10) ? "0" + seconds : seconds;
-const time = `${hours2}:${minutes2}:${seconds2}`;
+let edited_hours = (hours<10) ? "0" + hours : hours;
+let edited_minutes = (minutes<10) ? "0" + minutes : minutes;
+let edited_seconds = (seconds<10) ? "0" + seconds : seconds;
+const time = `${edited_hours}:${edited_minutes}:${edited_seconds}`;
 
 console.log('Time is: ', time);
