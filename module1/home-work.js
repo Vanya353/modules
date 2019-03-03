@@ -20,19 +20,23 @@
   🔔 PS: для удобства и чистоты кода сохраните в переменные сообщения отображаемые в alert
 */
 
-const login=prompt("Введите логин");
+const login = prompt("Введите логин",'');
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
-if (login == null){
-  alert('Отменено пользователем!');
-}else if (login != adminLogin){
-  alert('Доступ запрещен, неверный пароль!');
-}else if(login==adminLogin){
-  var password=prompt("введите пароль");
-}if (password==adminPassword){
-  alert("Добро пожаловать!");
-}else if(password==null){
-  alert("Отменено пользователем!");
-}else if(password!=adminPassword){
-  alert("Доступ запрещен, неверный пароль!");
-}
+if (login==null){
+	alert('Отменено пользователем');
+ }else if (login!=adminLogin){
+ 	alert('Доступ запрещен, неверный логин!');
+ }
+ else if (login==adminLogin){
+ 	const password = prompt("введите пароль",'');
+ 	if (password == null){
+ 		alert('Отменено пользователем');
+ 	}
+ 	else if (password==adminPassword){
+ 		alert("Добро пожаловать");
+ 	}
+ 	else if (login!=adminPassword){
+ 	alert('Доступ запрещен, неверный пароль!');
+ }
+ }
