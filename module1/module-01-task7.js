@@ -8,14 +8,11 @@
   PS: используйте конструкцию if..else.
 */ 
 
-num = prompt('Введите произвольное целое число')
-l= Number
-if (num==null){
-  alert('Приходите еще');
-} else if (num>0){
-  alert('Спасибо');
-} else if (num<0){
-  alert('Спасибо');
-} else{
-  alert('Необходимо ввести целое число');
+const number = prompt('Введите произвольное целое число');
+if (number==null){
+	alert('Приходите еще');
+} else if (number.replace(/\s/g, '').length === 0 || isNaN(number)) {
+  alert('Необходимо было ввести целое число!');
+} else {
+  alert('Спасибо!');
 }
