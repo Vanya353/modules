@@ -21,8 +21,8 @@
     5 - "Каталог лучших отелей"
 */
 
-var a = +prompt("Введите число", '');
-switch(a){
+const number_hotel= prompt("Введите число", '');
+switch(number_hotel){
   case 0:
     alert("Очень жаль приходите еще");
     break;
