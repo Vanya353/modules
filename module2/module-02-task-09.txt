@@ -1,0 +1,16 @@
+﻿const numbers = [12, 15, 25, 37, 41];
+do{
+  let input = prompt('Введите число');
+  for(i in numbers){
+    if(isNaN(input)){
+      alert('No number');
+      break;
+    }if (input == numbers[i]){
+      alert('True number');
+      break;
+    }if (input !== numbers[i]){
+      alert('Wrong number');
+      break;
+    }
+  }
+}while(input != null);
