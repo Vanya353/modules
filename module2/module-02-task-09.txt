@@ -29,13 +29,13 @@ do{
   let input = prompt('Введите число');
   for(i in numbers){
     if(isNaN(input)){
-      alert('No number');
+      alert('Это не число');
       break;
     }if (input == numbers[i]){
-      alert('True number');
+      alert('Поздравляем, Вы угадали!');
       break;
     }if (input !== numbers[i]){
-      alert('Wrong number');
+      alert('Сожалеем, Вы не угадали!');
       break;
     }
   }
