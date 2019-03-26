@@ -14,10 +14,10 @@ const filterFromArray = function(){
   let result = []; // результат
   
   function processing(num){ // функція для обробки числа
-    repeatIndex = repeat.indexOf(num); // індекс числа в масиві повторюваних
-    resultIndex = result.indexOf(num); // індекс числа в масиві результатів
-    notInRepeat = repeatIndex == -1; // true якщо числа в масиві повторюваних нема
-    notInResult = resultIndex == -1; // true якщо числа в масиві результатів нема
+    const repeatIndex = repeat.indexOf(num); // індекс числа в масиві повторюваних
+    const resultIndex = result.indexOf(num); // індекс числа в масиві результатів
+    const notInRepeat = repeatIndex == -1; // true якщо числа в масиві повторюваних нема
+    const notInResult = resultIndex == -1; // true якщо числа в масиві результатів нема
     if (notInRepeat && notInResult){ // перевірка на нове число, чи нема його в жодному з масивів
       result.push(num); // добавляємо число в результат
       //console.log("add", num);
